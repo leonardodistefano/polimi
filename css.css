@@ -1,11 +1,70 @@
-h1, h2 {
-color:Yellow;
-background-color:violet;
-margin-left: 40px;
+body{
+	background-color: white;
 }
 
+
+
+#titolo {
+	position: center;
+	opacity:0;
+	color: white;
+	background-color:red;
+	margin-left: 80px;
+	margin-right: 80px;
+	position: left;
+	font-size: 72px;
+	animation-name:Titolo;
+	animation-duration:1s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	font-weight: bold;
+}
+
+#menu {
+	opacity:60%;
+	margin-left: 80px;
+	color: red;
+	font-size: 40px;
+	animation-name: menu;
+	animation-delay: 0.5s;
+	animation-duration: 2s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	position: absolute;
+}
+#immagine {
+    position: absolute;;
+    
+	opacity:0;
+	margin-left: 400px;
+	animation-name: immagine;
+	animation-delay: 0.5s;
+	animation-duration: 0.5s;
+	animation-timing-function: ease;
+	animation-fill-mode: forwards;
+	position: absolute;
+
+}
 
 #curriculum {
 	colro: red;
 	font-size:60px;
+
+
+}
+
+
+
+@keyframes menu {
+from {top:50px;opacity:0;}
+to {top:80px;opacity:1;}
+}
+@keyframes immagine {
+from {top:50px;opacity:0;}
+to {top:80px;opacity:1;}
+}
+
+@keyframes Titolo{
+from {opacity:0;}
+to {opacity:1;}
 }
